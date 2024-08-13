@@ -28,7 +28,7 @@ struct ContentView: View {
                 }
             } //: LIST
             .listStyle(.plain)
-            .navigationBarTitle("IndoWilderness", displayMode: .large)
+            .navigationBarTitle("Animals of Indonesia", displayMode: .large)
         } //: NAVIGATION
     }
 }
