@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9152DE772C6AED9D00C1D281 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152DE762C6AED9D00C1D281 /* AnimalListItemView.swift */; };
+		9152DE792C6AEEDA00C1D281 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152DE782C6AEEDA00C1D281 /* AnimalModel.swift */; };
 		919355252C6A1F58000D03EE /* IndoWildernessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919355242C6A1F58000D03EE /* IndoWildernessApp.swift */; };
 		919355272C6A1F58000D03EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919355262C6A1F58000D03EE /* ContentView.swift */; };
 		919355292C6A1F5A000D03EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919355282C6A1F5A000D03EE /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9152DE762C6AED9D00C1D281 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		9152DE782C6AEEDA00C1D281 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		919355212C6A1F58000D03EE /* IndoWilderness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoWilderness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919355242C6A1F58000D03EE /* IndoWildernessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoWildernessApp.swift; sourceTree = "<group>"; };
 		919355262C6A1F58000D03EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9193555C2C6A3B2C000D03EE /* CoverImageView.swift */,
+				9152DE762C6AED9D00C1D281 /* AnimalListItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				9193555F2C6A5429000D03EE /* CoverImageModel.swift */,
+				9152DE782C6AEEDA00C1D281 /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				919355272C6A1F58000D03EE /* ContentView.swift in Sources */,
+				9152DE772C6AED9D00C1D281 /* AnimalListItemView.swift in Sources */,
 				9193555A2C6A387F000D03EE /* MainView.swift in Sources */,
 				9193555D2C6A3B2C000D03EE /* CoverImageView.swift in Sources */,
 				919355602C6A5429000D03EE /* CoverImageModel.swift in Sources */,
+				9152DE792C6AEEDA00C1D281 /* AnimalModel.swift in Sources */,
 				919355562C6A3863000D03EE /* MapView.swift in Sources */,
 				919355252C6A1F58000D03EE /* IndoWildernessApp.swift in Sources */,
 				919355542C6A3839000D03EE /* VideoListView.swift in Sources */,

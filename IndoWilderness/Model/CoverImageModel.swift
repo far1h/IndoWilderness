@@ -5,7 +5,7 @@
 //  Created by Farih Muhammad on 12/08/2024.
 //
 
-import Foundation
+import SwiftUI
 
 struct CoverImage: Codable, Identifiable {
     let id: Int
