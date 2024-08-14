@@ -10,7 +10,7 @@ import SwiftUI
 struct GalleryView: View {
     // MARK: - PROPERTIES
     
-    @State private var selectedAnimal: String = "lion"
+    @State private var selectedAnimal: String = "sumatran_tiger"
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
     let haptics = UIImpactFeedbackGenerator(style: .medium)
@@ -42,7 +42,7 @@ struct GalleryView: View {
             // MARK: - IMAGE
                 Image(selectedAnimal)
                     .resizable()
-                    .scaledToFit()
+                    .aspectRatio(2560 / 1600, contentMode: .fit) // Maintain a 2560x1600 aspect ratio
                     .clipShape(Circle())
                     .overlay {
                         Circle()
@@ -64,7 +64,7 @@ struct GalleryView: View {
                     ForEach(animals) { item in
                         Image(item.image)
                             .resizable()
-                            .scaledToFit()
+                            .aspectRatio(2560 / 1600, contentMode: .fit) // Maintain a 2560x1600 aspect ratio
                             .clipShape(Circle())
                             .overlay {
                                 Circle()
