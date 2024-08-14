@@ -12,7 +12,7 @@ struct MapView: View {
     // MARK: - PROPERTIES
     
     @State private var region: MKCoordinateRegion = {
-        var mapCoordinates = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+        var mapCoordinates = CLLocationCoordinate2D(latitude: -6.1753924, longitude: 106.8271528) // Jakarta, Indonesia
         var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0)
         var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
         return mapRegion
