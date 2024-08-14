@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		9114A21B2C6C4BD3002759F1 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9114A21A2C6C4BD3002759F1 /* AnimalGridItemView.swift */; };
 		9114A2212C6C5403002759F1 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9114A2202C6C5403002759F1 /* Stickers.xcassets */; };
-		9114A2252C6C5403002759F1 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9114A21E2C6C5401002759F1 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9114A2252C6C5403002759F1 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9114A21E2C6C5401002759F1 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9114A22B2C6C556E002759F1 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9114A22A2C6C556E002759F1 /* CreditsView.swift */; };
+		9114A22E2C6C56F4002759F1 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9114A22D2C6C56F4002759F1 /* CenterModifier.swift */; };
 		9152DE772C6AED9D00C1D281 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152DE762C6AED9D00C1D281 /* AnimalListItemView.swift */; };
 		9152DE792C6AEEDA00C1D281 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152DE782C6AEEDA00C1D281 /* AnimalModel.swift */; };
 		9152DE7B2C6AF60B00C1D281 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152DE7A2C6AF60B00C1D281 /* AnimalDetailView.swift */; };
@@ -81,6 +83,9 @@
 		9114A21E2C6C5401002759F1 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9114A2202C6C5403002759F1 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		9114A2222C6C5403002759F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9114A22A2C6C556E002759F1 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		9114A22D2C6C56F4002759F1 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		9114A22F2C6C57EA002759F1 /* IndoWilderness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IndoWilderness.entitlements; sourceTree = "<group>"; };
 		9152DE762C6AED9D00C1D281 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
 		9152DE782C6AEEDA00C1D281 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		9152DE7A2C6AF60B00C1D281 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -145,6 +150,14 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		9114A22C2C6C56C8002759F1 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				9114A22D2C6C56F4002759F1 /* CenterModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		919355182C6A1F58000D03EE = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,8 @@
 		919355232C6A1F58000D03EE /* IndoWilderness */ = {
 			isa = PBXGroup;
 			children = (
+				9114A22F2C6C57EA002759F1 /* IndoWilderness.entitlements */,
+				9114A22C2C6C56C8002759F1 /* Modifier */,
 				91A84E782C6B4E800011AB5A /* Helper */,
 				919355612C6A550A000D03EE /* Extension */,
 				9193555E2C6A5413000D03EE /* Model */,
@@ -245,6 +260,7 @@
 				91A84E7D2C6B62CF0011AB5A /* MapAnnotationView.swift */,
 				91A84E7F2C6B6B030011AB5A /* MotionAnimationView.swift */,
 				9114A21A2C6C4BD3002759F1 /* AnimalGridItemView.swift */,
+				9114A22A2C6C556E002759F1 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,8 +426,10 @@
 				9114A21B2C6C4BD3002759F1 /* AnimalGridItemView.swift in Sources */,
 				9152DE7F2C6AF8BD00C1D281 /* InsetGalleryView.swift in Sources */,
 				91A84E752C6B3ACA0011AB5A /* VideoListItemView.swift in Sources */,
+				9114A22B2C6C556E002759F1 /* CreditsView.swift in Sources */,
 				919355632C6A551D000D03EE /* CodableBundleExtension.swift in Sources */,
 				91A84E802C6B6B030011AB5A /* MotionAnimationView.swift in Sources */,
+				9114A22E2C6C56F4002759F1 /* CenterModifier.swift in Sources */,
 				9152DE7D2C6AF7B200C1D281 /* HeadingView.swift in Sources */,
 				91A84E772C6B4B4A0011AB5A /* VideoPlayerView.swift in Sources */,
 			);
@@ -422,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		9114A2242C6C5403002759F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 9114A21D2C6C5401002759F1 /* Stickers */;
 			targetProxy = 9114A2232C6C5403002759F1 /* PBXContainerItemProxy */;
 		};
@@ -442,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.farihmhmd.IndoWilderness.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.farihmhmd.IndoWilderness.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -585,6 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IndoWilderness/IndoWilderness.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IndoWilderness/Preview Content\"";
@@ -597,6 +619,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +627,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.farihmhmd.IndoWilderness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -615,6 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IndoWilderness/IndoWilderness.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IndoWilderness/Preview Content\"";
@@ -627,6 +654,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -634,6 +662,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.farihmhmd.IndoWilderness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
