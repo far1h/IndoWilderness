@@ -15,8 +15,10 @@ struct AnimalGridItemView: View {
     var body: some View {
         Image(animal.image)
             .resizable()
-            .scaledToFit()
-            .cornerRadius(12)
+//                        .scaledToFill() // Scale to fill the container
+                        .aspectRatio(2560 / 1600, contentMode: .fit) // Maintain a 2560x1600 aspect ratio
+                        .clipped() // Clip any overflow
+                        .cornerRadius(12)
     }
 }
 // MARK: - PREVIEW
