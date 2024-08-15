@@ -4,5 +4,4 @@ todo:
 - fix gallery images in detail view
 - replace videos
 - connect with wikipedia API
-- search function
 - map detail view
