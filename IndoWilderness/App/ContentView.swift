@@ -14,7 +14,7 @@ struct ContentView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridViewActive : Bool = false
-    
+    @State private var searchText: String = ""
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     @State private var gridColumn: Int = 1
     @State private var toolbarIcon: String = "square.grid.2x2"
@@ -46,6 +46,15 @@ struct ContentView: View {
             toolbarIcon = "square.grid.2x2"
             
         }
+        
+    }
+    // Filtered animals based on search text
+    var filteredAnimals: [Animal] {
+        if searchText.isEmpty {
+            return animals
+        } else {
+            return animals.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        }
     }
     
     // MARK: - BODY
@@ -58,7 +67,7 @@ struct ContentView: View {
                         CoverImageView()
                             .frame(height: 300)
                             .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                        ForEach(animals) { animal in
+                        ForEach(filteredAnimals) { animal in
                             NavigationLink {
                                 AnimalDetailView(animal: animal)
                             } label: {
@@ -72,7 +81,7 @@ struct ContentView: View {
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                            ForEach(animals) { item in
+                            ForEach(filteredAnimals) { item in
                                 NavigationLink(destination: {
                                     AnimalDetailView(animal: item)
                                 }, label: {
@@ -118,6 +127,7 @@ struct ContentView: View {
                     }
                 }
             } //: TOOLBAR
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)) // Search bar
         } //: NAVIGATION
     }
 }
